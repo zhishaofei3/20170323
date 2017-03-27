@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/common.css">
+	<style type="text/css">
+		body {
+			overflow: hidden;
+		}
+
+		.xiaobaika {
+			margin-top: 20px;
+			width: 1200px;
+			height: 900px;
+		}
+
+		.xiaobaika img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.xiaobaika:before {
+			content: '';
+			width: 1200px;
+			height: 1200px;
+			border-radius: 50%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -600px;
+			margin-top: -600px;
+			transition-property: transform, width, height, opacity;
+			transition-duration: 0.5s;
+			opacity: 1;
+			background-color: #FFF;
+			transform: scale(0);
+		}
+
+		.xiaobaika:hover:before {
+			transform: scale(1);
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+<a class="xiaobaika" href="#">
+	<img src="https://img30.360buyimg.com/jr_image/jfs/t2353/56/2925414484/93521/14918568/56f75611Na6fbebd8.jpg">
+</a>
+</body>
+</html>

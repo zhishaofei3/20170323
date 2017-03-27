@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+		.biaopan {
+			width: 400px;
+			height: 400px;
+			background-color: #FF0;
+			position: absolute;
+			border-radius: 50%;
+			margin-top: 50px;
+			margin-left: 200px;
+		}
+		.miaozhen {
+			width: 5px;
+			height: 180px;
+			transform-origin: top center;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			background-color: #F00;
+			animation: miaozhen_donghua 60s steps(60) infinite;
+		}
+
+		@keyframes miaozhen_donghua {
+			0% {
+				transform: rotate(-180deg);
+			}
+			100% {
+				transform: rotate(180deg);
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="biaopan">
+	<div class="miaozhen"></div>
+</div>
+</body>
+</html>

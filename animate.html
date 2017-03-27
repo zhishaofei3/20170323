@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/common.css">
+	<style type="text/css">
+		@keyframes xiong {
+			0% {
+				left: 0;
+			}
+			33% {
+				top: 100px;
+				box-shadow: 10px 10px 12px 12px #FFE12C;
+			}
+			50% {
+				transform: scale(2) ;
+			}
+			100% {
+				top: 10px;
+				left: 500px;
+			}
+		}
+
+		.bear {
+			box-shadow: 10px 20px 2px 2px #F00;
+			position: absolute;
+			left: 0;
+			top: 0;
+			animation: xiong 2s 5s infinite;
+			/*animation-name: xiong;*/
+			/*animation-duration: 2s;*/
+			/*animation-delay: 5s;*/
+			/*animation-iteration-count: 5s;*/
+			/*animation-iteration-count: infinite;*/
+			/*animation-direction: alternate;*/
+			/*animation-fill-mode: none;*/
+			/*animation-fill-mode: forwards;*/
+			/*animation-fill-mode: backwards;*/
+			/*animation-fill-mode: both;*/
+
+		}
+	</style>
+</head>
+<body>
+
+<img class="bear" src="cloudyxiong.png" alt="">
+<!--<img class="bear" src="cloudyxiong.png" alt="" style="animation-delay: 1s">-->
+<!--<img class="bear" src="cloudyxiong.png" alt="" style="animation-delay: 2s">-->
+
+</body>
+</html>
